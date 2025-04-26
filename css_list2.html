@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+    <style>
+        * {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 0px;
+        }
+
+        body {
+            width: 600px;
+            margin: 20px auto;
+            background-color: rgb(92, 7, 7);
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        h2 {
+            color: rgb(65, 20, 228);
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        .a {
+            list-style-type: square;
+            /*list-style-image:url(css_symbol.png);I cannot shorten image size*/
+            list-style-position: inside;
+            padding: 30px;
+            background-color: antiquewhite;
+            color: rgb(70, 233, 206);
+        }
+
+        .b {
+            list-style: decimal-leading-zero outside;
+            /*url(css_symbol.png);shorthand declaration , decimal will is not displayed if i use image properties*/
+            color: rgb(223, 22, 48);
+            background-color: antiquewhite;
+            padding: 30px;
+        }
+
+        ul li {
+            background-color: blueviolet;
+            padding: 5px;
+            border: 15px groove rgb(111, 208, 238);
+        }
+
+        ol li {
+            background-color: rgba(146, 236, 236, 0.911);
+            padding: 5px;
+            border: 15px outset rgb(170, 154, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learning CSS List</h1>
+    <h2>1. Unordered List</h2>
+    <ul class="a">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Juice</li>
+        <li>Fruit</li>
+        <li>Drink</li>
+    </ul>
+    <h2>2. Ordered List</h2>
+    <ol class="b">
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Juice</li>
+        <li>Fruit</li>
+        <li>Drink</li>
+    </ol>
+</body>
+
+</html>
