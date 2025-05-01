@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(../../../../Downloads/pexels-no-name-14543-66997.jpg);
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(96, 100, 117);
+        }
+
+        .menu_bar {
+            background-color: rgb(47, 126, 16);
+            text-align: center;
+        }
+
+        .menu_bar ul {
+            display: inline-flex;
+            list-style-type: none;
+            color: #fff;
+
+        }
+
+        .menu_bar ul li {
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .menu_bar ul li a {
+            text-decoration: none;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .active,
+        .menu_bar ul li:hover {
+            background-color: rgb(226, 100, 41);
+            border-radius: 10px;
+        }
+
+        /* from here, submenu is started */
+
+        .submenu_1 {
+            display: none;
+        }
+
+        .menu_bar ul li:hover .submenu_1 {
+            display: block;
+            position: absolute;
+            background-color: rgb(43, 189, 140);
+            margin-top: 10px;
+            margin-left: 15px;
+            border-radius: 20px;
+        }
+
+        .menu_bar ul li:hover .submenu_1 ul {
+            display: block;
+            margin: 3px;
+        }
+
+        .menu_bar ul li:hover .submenu_1 ul li {
+            width: 150px;
+            text-align: left;
+            margin: 3px;
+            background: transparent;
+            border-bottom: 1px solid black;
+            border-radius: 0px;
+        }
+
+        .menu_bar ul li:hover .submenu_1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu_bar ul li:hover .submenu_1 ul li a:hover {
+            color: rgb(230, 72, 124);
+
+        }
+
+        /* sub into submenu */
+
+        .submenu_2 {
+            background-color: rgb(12, 150, 150);
+            display: none;
+        }
+
+        .submenu_1 ul li:hover .submenu_2 {
+            display: block;
+            position: absolute;
+            margin-left: 140px;
+            margin-top: -30px;
+            border-radius: 20px;
+        }
+
+        .submenu_1 ul li:hover .submenu_2 ul {
+            display: block;
+        }
+
+        .submenu_1 ul li:hover .submenu_2 ul li {
+            background-color: aqua;
+            width: 150px;
+            text-align: left;
+            margin: 3px;
+            padding: 15px;
+            background: transparent;
+            border-bottom: 1px solid black;
+            border-radius: 0px;
+        }
+
+        .submenu_1 ul li:hover .submenu_2 ul li a:hover {
+            color: rgb(163, 168, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu_bar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Services</a>
+                <div class="submenu_1">
+                    <ul>
+                        <li><a href="#">Consultant</a></li>
+                        <li><a href="#">Incentive care</a></li>
+                        <li><a href="#">Team</a>
+                            <div class="submenu_2">
+                                <ul>
+                                    <li><a href="#">Team1</a></li>
+                                    <li><a href="#">Team2</a></li>
+                                    <li><a href="#">Team3</a></li>
+                                    <li><a href="#">Team4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Exchage</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">About us</a>
+                <div class="submenu_1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
