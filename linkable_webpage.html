@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(140, 214, 137);
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 10px;
+            /* text-align: left; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(124, 13, 13);
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            background-color: blueviolet;
+            color: antiquewhite;
+        }
+
+        div {
+            margin: 0px 50px;
+        }
+
+        section {
+            padding: 50px;
+            display: none;
+        }
+
+        section:target {
+            display: block;
+        }
+
+        /* span {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About us</a>
+        </div>
+        <div>
+            <span><input type="text">
+                <button type="submit">Go</button></span>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto exercitationem ut aliquid minus sunt,
+            perferendis facere eaque explicabo consectetur doloremque odit eos necessitatibus voluptatum eveniet, eius
+            perspiciatis, quidem reprehenderit neque!</p>
+    </section>
+    <section id="service">
+        <h2>service</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto exercitationem ut aliquid minus sunt,
+            perferendis facere eaque explicabo consectetur doloremque odit eos necessitatibus voluptatum eveniet, eius
+            perspiciatis, quidem reprehenderit neque!</p>
+    </section>
+    <section id="contact">
+        <h2>contact</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto exercitationem ut aliquid minus sunt,
+            perferendis facere eaque explicabo consectetur doloremque odit eos necessitatibus voluptatum eveniet, eius
+            perspiciatis, quidem reprehenderit neque!</p>
+    </section>
+    <section id="about">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto exercitationem ut aliquid minus sunt,
+            perferendis facere eaque explicabo consectetur doloremque odit eos necessitatibus voluptatum eveniet, eius
+            perspiciatis, quidem reprehenderit neque!</p>
+    </section>
+</body>
+
+</html>
